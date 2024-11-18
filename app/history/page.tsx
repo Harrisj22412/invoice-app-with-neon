@@ -2,6 +2,8 @@
 import { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
 import SideNav from "@/app/components/SideNav";
+import { useUser } from "@clerk/nextjs";
+
 
 export default function History() {
   const { isLoaded, isSignedIn, user } = useUser();
