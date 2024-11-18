@@ -1,6 +1,8 @@
 import Link from "next/link";
 
+
 export default function Home() {
+
   return (
     <main className='w-full'>
       <section className='p-8 h-[90vh] md:w-2/3 mx-auto text-center w-full flex flex-col items-center justify-center'>
