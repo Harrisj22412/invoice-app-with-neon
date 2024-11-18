@@ -1,7 +1,7 @@
 "use client";
 import React, { useRef } from "react";
 import { useReactToPrint } from "react-to-print";
-import InvoiceTable from "@/app/components/InoviceTable";
+import InvoiceTable from "@/app/components/InvoiceTable";
 import { useEffect, useCallback, useState } from "react";
 import { useUser } from "@clerk/nextjs";
 import { forwardRef } from "react";
