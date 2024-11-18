@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "migrate": "npx drizzle-kit generate -- dotenv_config_path='.env.local'",
-    "db-create": "dotenv -e .env.local -- npx drizzle-kit push'"
+    "db-create": "dotenv -e .env.local -- npx drizzle-kit push"
   },
   "dependencies": {
     "@clerk/nextjs": "^6.3.4",
