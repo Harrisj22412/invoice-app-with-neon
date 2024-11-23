@@ -28,6 +28,11 @@ export const getCustomers = async (user_id: string) => {
 	return await customersDB.select().from(customersTable).where(eq(customersTable.owner_id, user_id)).orderBy(desc(customersTable.created_at));
 };
 
+//👇🏻 get single invoice
+export const getSingleInvoice = async (id: number) => {
+    return await invoicesDB.select().from(invoicesTable).where(eq(invoicesTable.id, id));
+};
+
 //👇🏻 get single customer
 export const getSingleCustomer = async (name: string) => {
     return await customersDB.select().from(customersTable).where(eq(customersTable.name, name));
